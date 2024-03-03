@@ -2,6 +2,10 @@ import adodbapi
 import pandas as pd
 
 # Connection string
+
+#replace the Initial Catalog (d87ae86c-8953-4448-a0cd-dcce467ea175 in the example below) with the one for your open PBIX
+#You can find this using DAX Studio : "Connect -> Advanced Options ->Initial Catalog "
+#once connected via DAX studio -. find the port on the botton right of the "Home" window
 conn_str = "Provider=MSOLAP;Data Source=localhost:60668;Initial Catalog=d87ae86c-8953-4448-a0cd-dcce467ea175;"
 
 conn = adodbapi.connect(conn_str)
